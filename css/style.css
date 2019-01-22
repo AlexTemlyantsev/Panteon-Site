@@ -1,0 +1,324 @@
+body {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-weight: 400;
+			
+	background-color: #ffffff;
+	
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+			clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/* header */ 
+
+.main-header {
+	color: #ffffff;
+}
+
+.menu-wrapper {
+	width: 100%;
+	min-height: 950px;
+	position: relative;
+	
+	background: #79156a url("../img/background-panteon.jpg") no-repeat 50% 50%;
+}
+
+.main-header .top-menu {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 40px;
+	margin-bottom: 170px;
+}
+
+.top-menu p {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.top-menu .header-logo {
+	width: 195px;
+	padding-left: 65px;
+}
+
+.top-menu .header-logo::before {
+	content: "";
+	
+	position: absolute;
+	left: 2px;
+	top: -4px;
+	
+	width: 48px;
+	height: 48px;
+	
+	background: url("../img/logo.png") no-repeat 0 0;  
+}
+
+.header-logo {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.header-logo span {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.top-menu .menu {
+	font-size: 18px;
+	line-height: 24px;
+	
+	width: 120px;
+	padding-right: 65px;
+}
+
+.top-menu .menu::after {
+	content: "";
+	
+	position: absolute;
+	right: 0px;
+	top:  4px;
+	
+	width: 47px;
+	height: 18px;
+	
+	background: url("../img/menu.svg") no-repeat 0 0;  
+}
+
+.bottom-header {
+	display: flex;
+	margin: 0 auto;
+	padding-left: 127px;
+}
+
+.bottom-header .pantheon-decoration {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.pantheon-decoration li {
+	font-size: 24px;
+	line-height: 50px;
+	color: #ff9ebd;
+	text-transform: uppercase;
+}
+
+.pantheon-decoration:nth-child(1) {
+	margin-right: 32px;
+	opacity: 0.1;
+}
+
+.pantheon-decoration:nth-child(2) {
+	margin-right: 80px;
+	opacity: 0.5;
+}
+
+.caption {
+	font-size: 37px;
+	line-height: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	
+	width: 620px;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.caption span:first-child {
+	font-weight: 100;
+}
+
+.caption span:nth-child(2) {
+	font-size: 195px;
+	line-height: 170px;
+	font-weight: 700;
+	margin-left: -10px;
+}
+
+.presentation-panteon {
+	display: flex;
+}
+
+.presentation-panteon img {
+	opacity: 0.7;
+}
+
+.watch-video {
+	position: relative;
+}
+
+.watch-video-option {
+	position: absolute;
+	left: 170px;
+	top: 120px;
+	
+	display: flex;
+	
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 600;
+}
+
+.watch-video .watch {
+	width: 130px;
+	margin-left: 55px;
+	padding: 20px 0;
+}
+
+.watch-video img {
+	width: 582px; 
+	height: 292px;
+}
+
+.watch-video button {
+	background-color: transparent;
+	border: transparent;
+}
+
+.watch-video button::before {
+	content: "";
+	
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+	width: 52px;
+	height: 52px;
+	background-color: #e12457;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.watch-video button::after {
+	content: "";
+  	
+	position: absolute; 
+	left: 22px;
+	top: 19px;
+	
+	box-sizing: content-box;
+	width: 0;
+	height: 0;
+
+	border: 14px solid  #ffffff;
+	opacity: 1;
+	border-top-width: 7px;
+	border-top-color: transparent;
+	border-bottom-width: 7px;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.city-index {
+	font-size: 14px;
+	line-height: 14px;
+	
+	width: 115px;
+	
+	position: relative;
+	margin: 112px 0 0 64px;
+	color: #ffcfdf;
+}
+
+.city-index::before {
+	content: "";
+	
+	position: absolute;
+	top: 31px;
+	left: -143px;
+	
+	width: 118px;
+	height: 1px;
+	
+	background-color: #ff9ebd;
+}
+
+.down-button {
+	background-color: transparent;
+	border: transparent;
+	position: relative;
+	margin-bottom: 141px;
+}
+
+.down-button::before {
+	content: "";
+	
+	position: absolute;
+	top: 23px;
+	left: 0;
+	
+	width: 75px;
+	height: 75px;
+	
+	background-color: #ac1c60;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.down-button::after {
+	content: "";
+	
+	position: absolute;
+	top: 47px;
+	left: 27px;
+	
+	width: 24px;
+	height: 23px;
+	
+	background: url("../img/down.svg") no-repeat 0 0;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
