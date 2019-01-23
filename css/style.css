@@ -38,7 +38,7 @@ html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
 .container {
-	width: 1160px;
+	width: 1150px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -318,12 +318,127 @@ html { box-sizing: border-box; }
 }
 
 
+/* main */
 
 
+.info-mars-wrapper {
+	width: 100%;
+	min-height: 212px;
+	background-color: #fff5f8;
+	
+	margin-bottom: 85px;
+}
 
+.info-mars {
+	list-style: none;
+	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+	padding: 53px 10px 0 10px;
+}
 
+.info-mars li {
+	margin: 0;
+	margin-right: 50px;
+	padding: 0;
+	width: 130px;
+	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
 
+.info-mars .temperature {
+	margin: 0;
+	width: 100px;
+}
 
+.info-mars .number {
+	font-size: 48px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #e12457;
+	
+	padding: 0;
+	margin: 0;
+	margin-bottom: 24px;
+}
+
+.info-mars .description {
+	font-size: 13px;
+	line-height: 18px;
+	color: #4c4c4c;
+	
+	padding: 0;
+	margin: 0;
+	margin-bottom: 57px;
+}
+
+.remember-mars {
+	position: relative; 
+}
+
+.remember-mars h2 {
+	font-size: 60px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #e12457;
+	
+	margin: 0;
+	margin-bottom: 60px;
+	padding: 0;
+}
+
+.question-remember-mars {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 200px;
+	margin-bottom: 128px;
+}
+
+.question-remember-mars .description-of-mars {
+	width: 470px;
+	margin-right: 50px;
+}
+
+.question-remember-mars .logistics-mars {
+	width: 420px;
+}
+
+.question-remember-mars h2 {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+	
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+}
+
+.question-remember-mars p {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #4c4c4c;
+}
+
+.question-remember-mars::before {
+	content: "";
+	
+	position: absolute;
+	bottom: 0px;
+	left: -80px;
+	
+	width: 1455px;
+	height: 455px;
+	z-index: -1;
+
+	background: url("../img/distance.png") no-repeat 0 0;
+}
 
 
 
