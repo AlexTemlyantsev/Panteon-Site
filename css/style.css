@@ -408,7 +408,8 @@ html { box-sizing: border-box; }
 	width: 420px;
 }
 
-.question-remember-mars h2 {
+.question-remember-mars h3,
+.realization-mask h3 {
 	font-size: 24px;
 	line-height: 24px;
 	font-weight: 700;
@@ -440,8 +441,211 @@ html { box-sizing: border-box; }
 	background: url("../img/distance.png") no-repeat 0 0;
 }
 
+.realization h2 {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 700;
+	
+	color: #e12457;
+	margin: 0;
+	margin-bottom: 55px;
+	padding: 0;
+}
 
+.realization-mask-column {
+	display: flex;
+	flex-wrap: wrap;
+}
 
+.realization-mask {
+	width: 700px;
+}
 
+.realization-mask p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #4c4c4c;
+	
+	margin: 0;
+	margin-bottom: 22px;
+	padding: 0;
+}
+
+.realization-mask blockquote {
+	position: relative;
+	
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #e12457;
+	
+	margin: 0;
+	margin-bottom: 44px;
+	padding: 0;
+}
+
+.realization-mask blockquote::before {
+	content: "";
+	
+	position: absolute;
+	top: -22px;
+	left: -48px;
+	
+	width: 12px;
+	height: 12px;
+	
+	background: url("../img/blockqoute.png") repeat-x 0 0;
+}
+
+.photo-mask {
+	position: relative;
+	
+	box-sizing: content-box;
+	width: 325px;
+	height: 373px;
+	
+	margin:  0 0 68px 55px;
+	padding: 47px 50px 0 0;
+}
+
+.photo-mask::before {
+	content: "";
+	
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	
+	width: 325px;
+	height: 373px;
+	
+	background-color: #ffffff;
+	border: 10px solid #e12457;
+}
+
+.flight-cost {
+	display: flex;
+	width: 1140px;
+	height: 308px;
+	position: relative;
+	
+	background: url("../img/background-rocket.jpg") no-repeat 0 0;
+}
+
+.rocket {
+	position: relative;
+	
+	box-sizing: content-box;
+	width: 310px;
+	height: 310px;
+	margin: 0 60px 0 27px;
+	padding: 0;
+}
+
+.rocket::before {
+	content: "";
+	
+	position: absolute;
+	top: -29px;
+	left: 0;
+	
+	width: 310px;
+	height: 310px;
+	
+	background: url("../img/rocket.jpg") no-repeat 0 0;
+}
+
+.price-flight {
+	color: #ffffff;
+	
+	margin: 0;
+	padding: 0;
+	width: 700px;
+}
+
+.price-flight h3 {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 700;
+	
+	margin: 0;
+	padding: 0;
+	padding-top: 60px;
+	margin-bottom: 30px;
+}
+
+.price-flight p {
+	font-size: 16px;
+	line-height: 24px;
+	
+	margin: 0;
+	padding: 0;
+	margin-bottom: 24px;
+}
+
+.price-byu {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.price-byu p {
+	font-size: 60px;
+	line-height: 24px;
+	font-weight: 100;
+	
+	margin: 0;
+	margin-right: 40px;
+	padding: 0;
+}
+
+.price-byu div {
+	position: relative;
+	
+	font-size: 24px;
+	line-height: 24px;
+	
+	margin: 0;
+	margin-right: 100px;
+	padding: 0;
+}
+
+.price-byu div::after {
+	content: "";
+	
+	position: absolute;
+	top: 34px;
+	left: 0;
+	
+	width: 218px;
+	height: 1px;
+	
+	background-color: #ffffff;
+}
+
+.byu-flight {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	text-align: center;
+	color: #c2529a;
+	
+	width: 200px;
+	min-height: 57px;
+	padding: 16px 0;
+	
+	background-color: #ffffff;
+	border-radius: 26px;
+}
+
+.byu-flight:hover,
+.byu-flight:focus {
+	opacity: 0.5;
+}
+
+.byu-flight:active {
+	background-color: #ff0000;
+	color: #ffffff;
+}
 
 
