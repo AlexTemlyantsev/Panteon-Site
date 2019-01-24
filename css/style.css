@@ -441,6 +441,12 @@ html { box-sizing: border-box; }
 	background: url("../img/distance.png") no-repeat 0 0;
 }
 
+.realization {
+	margin: 0;
+	margin-bottom: 165px;
+	padding: 0;
+}
+
 .realization h2 {
 	font-size: 60px;
 	line-height: 60px;
@@ -648,4 +654,192 @@ html { box-sizing: border-box; }
 	color: #ffffff;
 }
 
+.life-mars-wrapper {
+	width: 100%;
+	background: url("../img/background-space.jpg") no-repeat 0 0;
+}
+
+.life-mars {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	
+	color: #ffffff;
+	
+	padding: 0 10px;
+	padding-top: 100px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.life-mars h2 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 700;
+	
+	margin: 0;
+	margin-bottom: 73px;
+	padding: 0;
+}
+
+.first-men {
+	position: relative;
+	margin: 0;
+	margin-bottom: 71px;
+	padding: 0;
+	
+	width: 1139px;
+	height: 572px;
+}
+
+.first-men button {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	
+	width: 52px;
+	height: 52px;
+	background-color: #e12457;
+	border-color: transparent;
+	border-radius: 50%;
+	
+	cursor: pointer;
+	z-index: 1;
+}
+
+.first-men button::after {
+	content: "";
+  	
+	position: absolute; 
+	left: 19px;
+	top: 19px;
+	
+	box-sizing: content-box;
+	width: 0;
+	height: 0;
+
+	border: 14px solid  #ffffff;
+	opacity: 1;
+	border-top-width: 7px;
+	border-top-color: transparent;
+	border-bottom-width: 7px;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.selection-column {
+	display: flex;
+	
+	margin: 0;
+	padding: 0;
+	margin-bottom: 148px;
+}
+
+.selection-question {
+	list-style: none;
+	
+	margin: 0;
+	padding: 0;
+
+}
+
+.selection-question li {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 65px;
+}
+
+.selection-question .button {
+	position: relative;
+	
+	font-size: 16px;
+	line-height: 24px;
+	
+	width: 240px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	opacity: 0.5;
+}
+
+.selection-question .button:hover,
+.selection-question .button:focus {
+	opacity: 0.7;
+}
+
+.selection-question .button:active {
+	opacity: 1;
+}
+
+.selection-question .button.active {
+	opacity: 1;
+}
+
+.selection-question .button.active::before,
+.selection-question .button.active::after {
+	content: "";
+	
+	position: absolute;
+	top: 5px;
+	
+	width: 9px;
+	height: 15px;
+	
+	background: url("../img/right-arrow.svg") no-repeat 0 0;
+}
+
+.selection-question .button.active::before {
+	right: 28px;
+	opacity: 0.7;
+}
+
+.selection-question .button.active::after {
+	right: 20px;
+	opacity: 0.5;
+}
+
+
+.selection-question .arrow-right {
+	position: absolute;
+	top: 5px;
+	right: 36px;
+	
+	width: 9px;
+	height: 15px;
+	
+	background: url("../img/right-arrow.svg") no-repeat 0 0;
+}
+
+.selection-question .button::after {
+	content: "";
+	
+	position: absolute;
+	
+}
+
+.live-mars {
+	width: 780px;
+}
+
+.live-mars h3 {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 700;
+	
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.live-mars p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+}
 
