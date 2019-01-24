@@ -656,7 +656,7 @@ html { box-sizing: border-box; }
 
 .life-mars-wrapper {
 	width: 100%;
-	background: url("../img/background-space.jpg") no-repeat 0 0;
+	background: url("../img/background-space.jpg") no-repeat 50% 50% #333366;
 }
 
 .life-mars {
@@ -734,7 +734,6 @@ html { box-sizing: border-box; }
 	
 	margin: 0;
 	padding: 0;
-	margin-bottom: 148px;
 }
 
 .selection-question {
@@ -843,3 +842,203 @@ html { box-sizing: border-box; }
 	padding: 0;
 }
 
+.live-mars-colony {
+	padding-bottom: 146px;
+}
+
+.live-mars-colony h2 {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 700;
+	color: #e12457;
+	
+	margin: 0;
+	margin-bottom: 65px;
+	padding: 0;
+}
+
+.organization-live {
+	display: flex;
+}
+
+.selection-info-colony {
+	margin: 0;
+	margin-right: 72px;
+	padding: 0;
+	padding-left: 5px;
+	
+	position: relative;
+	list-style: none;
+}
+
+.selection-info-colony::before {
+	content: "";
+	
+	position: absolute;
+	top: 16px;
+	left: 0;
+	
+	width: 3px;
+	height: 650px;
+	
+	background-color: #e12457;
+}
+
+.selection-info-colony .button {
+	position: relative;
+	
+	width: 16px;
+	padding: 0;
+	margin: 0;
+	margin-right: 28px;
+}
+
+.selection-info-colony div {
+	position: relative;
+	
+	font-size: 20px;
+	line-height: 24px; 
+	color: #e12457;
+	font-weight: 700;
+	
+	transform: rotate(90deg);
+	margin: 0;
+	margin-top: 60px;
+	padding-top: 40px;
+}
+
+.selection-info-colony .active-info-colony {
+	margin-bottom: 155px;
+}
+
+.selection-info-colony li {
+	margin: 0;
+	margin-bottom: 0px;
+}
+
+.selection-info-colony div::before {
+	content: "";
+	
+	position: absolute;
+	transform: rotate(-90deg);
+}
+
+.selection-accommodation div::before {
+	top: 38px;
+	left: -40px;
+	
+	width: 30px;
+	height: 23px;
+	
+	background: url("../img/teacup.png") no-repeat 0 0;
+}
+
+.selection-security div::before {
+	top: 30px;
+	left: -30px;
+	
+	width: 26px;
+	height: 19px;
+	
+	background: url("../img/helmet.png") no-repeat 0 0;
+}
+
+.selection-explore div::before {
+	top: 22px;
+	left: -27px;
+	
+	width: 22px;
+	height: 31px;
+	
+	background: url("../img/microscope.png") no-repeat 0 0;
+}
+
+.selection-photo div::before {
+	top: 25px;
+	left: -27px;
+	
+	width: 25px;
+	height: 21px;
+	
+	background: url("../img/photo.png") no-repeat 0 0;
+}
+
+.selection-leaves div::before {
+	top: 20px;
+	left: -27px;
+	
+	width: 26px;
+	height: 27px;
+	
+	background: url("../img/leaves.png") no-repeat 0 0;
+}
+
+.selection-info-colony .button::before {
+	content: "";
+	
+	position: absolute;
+	left: -10px;
+	z-index: 10;
+	
+	width: 16px;
+	height: 16px;
+	
+	border: 3px solid #e12457;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+
+.selection-accommodation .button::before {
+	top: 0;
+}
+
+.active-info-colony .button::before {
+	background-color: #e12457;
+}
+
+
+
+.accommodation div {
+	width: 985px;
+	height: 457px;
+	
+	margin-bottom: 40px;
+}
+
+.accommodation h3 {
+	font-size: 24px;
+	line-height: 24px;
+	color: #000000;
+	
+	margin: 0;
+	margin-bottom: 19px;
+	padding: 0;
+}
+
+.accommodation p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #4c4c4c;
+	
+	margin: 0;
+	margin-bottom: 43px;
+	padding: 0;
+}
+
+.accommodation .button {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	color: #ffffff;
+	
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	box-sizing: content-box;
+	width: 160px;
+	
+	margin: 0;
+	padding: 13px 0;
+	background-color: #e12457;
+	border-radius: 18px;
+}
