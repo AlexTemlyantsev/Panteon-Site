@@ -62,6 +62,7 @@ html { box-sizing: border-box; }
 	position: relative;
 	
 	background: #79156a url("../img/background-panteon.jpg") no-repeat 50% 50%;
+	background-size: 100%;
 }
 
 .main-header .top-menu {
@@ -657,6 +658,7 @@ html { box-sizing: border-box; }
 .life-mars-wrapper {
 	width: 100%;
 	background: url("../img/background-space.jpg") no-repeat 50% 50% #333366;
+	background-size: 100%;
 }
 
 .life-mars {
@@ -1041,4 +1043,251 @@ html { box-sizing: border-box; }
 	padding: 13px 0;
 	background-color: #e12457;
 	border-radius: 18px;
+}
+
+/* footer */ 
+
+.footer-wraper {
+	background: url("../img/background-footer-1170.jpg") no-repeat 50% 50% #792381;
+	width: 100%;
+	margin: 0 auto;
+	background-size: 100%;
+}
+
+.info-progect-mars {
+	color: #ffffff;
+	padding: 126px 10px 48px 10px;
+}
+
+.info-progect-mars h2 {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 60px;
+	
+	margin: 0;
+	margin-bottom: 79px;
+	padding: 0;
+}
+
+.top-footer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.top-footer .subscription-form {
+	width: 393px;
+	min-height: 415px;
+	
+	padding: 70px;
+	padding-top: 70px;
+	margin: 0 68px 120px 0;
+	background: url("../img/colony-mars.jpg") no-repeat 0 0;
+}
+
+.subscription-form legend {
+	font-size: 23px;
+	font-weight: 700;
+	line-height: 24px;
+	
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.subscription-form p {
+	margin: 0;
+	margin-bottom: 38px;
+	padding: 0;
+	
+	background-color: transparent;
+	border-bottom: 1px solid #ffffff;
+}
+
+.subscription-form p:nth-child(3) {
+	margin-bottom: 55px;
+}
+
+.subscription-form input {
+	border: none;
+	background-color: transparent;
+}
+
+.subscription-form .subscription {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #c2529a;
+	
+	width: 256px;
+	margin: 0;
+	padding: 16px 0;
+	background-color: #ffffff;
+	border-radius: 24px;
+}
+
+.subscription-form .subscription:hover,
+.subscription-form .subscription:hover {
+	opacity: 0.7;
+}
+
+.subscription-form .subscription:active {
+	opacity: 1;
+	color: #ffffff;
+	background-color: #ff0000;
+}
+
+.top-footer .flight-plan {
+	width: 650px;
+	
+	margin: 0;
+	padding: 0;
+}
+
+.flight-plan p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	
+	margin: 0;
+	margin-bottom: 32px;
+	padding: 0;
+}
+
+.flight-plan a {
+	display: inline-block;
+	vertical-align: top;
+	
+	font-size: 16px;
+	line-height: 24px;
+	color: inherit;
+	
+	margin: 0;
+	padding: 2px 0;
+	
+	border-bottom: 1px solid #ffffff;
+}
+
+.flight-plan a:hover,
+.flight-plan a:focus,
+.bottom-fotter .project-mars:hover, 
+.bottom-fotter .project-mars:focus, {
+	opacity: 0.5
+}
+
+.flight-plan a:active,
+.bottom-fotter .project-mars:active {
+	opacity: 1;
+	color: #ff0000;
+	border-bottom: 1px solid #ff0000;
+}
+
+.bottom-fotter {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-fotter .header-logo {
+	position: relative;
+	
+	width: 150px;
+	padding: 0;
+	padding-left: 52px;
+}
+
+.bottom-fotter .header-logo::before {
+	content: "";
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 32px;
+	height: 32px;
+	
+	background: url("../img/logo-footer.png") no-repeat 0 0;
+}
+
+.bottom-fotter .project-mars {
+	font-size: 14px;
+	line-height: 24px;
+	color: inherit;
+	
+	margin: 0;
+	padding: 2px 0;
+	
+	border-bottom: 1px solid #ffffff;
+}
+
+.footer-social-wraper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-social-wraper p {
+	font-size: 14px;
+	line-height: 24px;
+	
+	margin: 0;
+	margin-right: 24px;
+	padding: 0;
+}
+
+.footer-social {
+	display: flex;
+	justify-content: space-between;
+	width: 170px;
+	margin: 0 auto;
+	margin-top: -5px;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.social-button {
+	position: relative;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	margin-right: 10px;
+}
+
+.social-button-vk::before {
+	content: "";
+	
+	width: 35px;
+	height: 35px;
+	
+	background: url("../img/vk.png") no-repeat 0 0;
+}
+
+.social-button-twitter::before {
+	content: "";
+	
+	width: 34px;
+	height: 34px;  
+	
+	background: url("../img/twitter.png") no-repeat 0 0;
+}
+
+.social-button-fb::before {
+	content: "";
+	
+	width: 34px;
+	height: 34px;
+	
+	background: url("../img/facebook.png") no-repeat 0 0;
+}
+
+.social-button-yt::before {
+	content: "";
+	
+	position: relative;
+	top: 8px;
+	right: 0;
+	
+	width: 32px;
+	height: 22px;
+	
+	background: url("../img/youtube.png") no-repeat 0 0;
 }
