@@ -65,6 +65,12 @@ html { box-sizing: border-box; }
 	background-size: 100%;
 }
 
+@media (max-width: 1700px) {
+	.menu-wrapper {
+		background-size: cover;
+	}
+}
+
 .main-header .top-menu {
 	display: flex;
 	justify-content: space-between;
@@ -661,6 +667,12 @@ html { box-sizing: border-box; }
 	background-size: 100%;
 }
 
+@media (max-width: 1700px) {
+	.life-mars-wrapper {
+		background-size: cover;
+	}
+}
+
 .life-mars {
 	font-size: 16px;
 	line-height: 24px;
@@ -1052,6 +1064,12 @@ html { box-sizing: border-box; }
 	width: 100%;
 	margin: 0 auto;
 	background-size: 100%;
+}
+
+@media (max-width: 1700px) {
+	.footer-wraper {
+		background-size: cover;
+	}
 }
 
 .info-progect-mars {
