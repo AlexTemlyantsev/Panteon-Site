@@ -941,6 +941,28 @@ html { box-sizing: border-box; }
 	cursor: pointer;
 }
 
+@media (max-width: 1170px) {
+	.life-mars {
+		padding-top: 85px;
+		margin-bottom: 70px;
+	}
+	
+	.life-mars h2 {
+		margin-bottom: 52px;
+	}
+	
+	.first-men {
+		width: 718px;
+		height: 361px;
+		margin-bottom: 62px;
+	}
+	
+	.first-men button {
+		left: 48%;
+		top: 40%;
+	}
+}
+
 .selection-column {
 	display: flex;
 	
@@ -1069,8 +1091,21 @@ html { box-sizing: border-box; }
 	padding: 0;
 }
 
+@media (max-width: 1170px) {
+	.live-mars-colony h2 {
+		font-size: 48px;
+		line-height: 48px;
+		margin-bottom: 60px;
+	}
+	
+	.live-mars-colony {
+		padding-bottom: 54px;
+	}
+}
+
 .organization-live {
 	display: flex;
+	position: relative;
 }
 
 .selection-info-colony {
@@ -1208,8 +1243,6 @@ html { box-sizing: border-box; }
 	background-color: #e12457;
 }
 
-
-
 .accommodation div {
 	width: 985px;
 	height: 457px;
@@ -1255,6 +1288,40 @@ html { box-sizing: border-box; }
 	border-radius: 18px;
 }
 
+@media (max-width: 1170px) {
+	.organization-live {
+		flex-direction: column;
+		align-items: center;
+		height: 700px;
+		padding-top: 70px;
+	}
+	
+	.selection-info-colony {
+		position: absolute;
+		right: 200px;
+		bottom: 400px;
+		transform: rotate(-90deg);
+		min-height: 50px;
+	}
+
+	.selection-info-colony div {
+		left: -90px;
+		transform: rotate(90deg);
+	}
+	
+	.selection-info-colony div::before {
+		transform: rotate(0deg);
+	}
+	
+	.accommodation div {
+		width: 719px;
+		height: 334px;
+		
+		margin-bottom: 35px;
+	}
+	
+}
+
 /* footer */ 
 
 .footer-wraper {
@@ -1285,6 +1352,20 @@ html { box-sizing: border-box; }
 	padding: 0;
 }
 
+@media (max-width: 1170px) {
+	
+	.info-progect-mars {
+		color: #ffffff;
+		padding: 90px 10px 50px 10px;
+	}
+
+	.info-progect-mars h2 {
+		font-size: 48px;
+		line-height: 48px;
+		margin-bottom: 70px;
+	}
+}
+
 .top-footer {
 	display: flex;
 	flex-wrap: wrap;
@@ -1313,7 +1394,7 @@ html { box-sizing: border-box; }
 .subscription-form p {
 	margin: 0;
 	margin-bottom: 38px;
-	padding: 0;
+	padding: 10px 0;
 	
 	background-color: transparent;
 	border-bottom: 1px solid #ffffff;
@@ -1381,6 +1462,32 @@ html { box-sizing: border-box; }
 	padding: 2px 0;
 	
 	border-bottom: 1px solid #ffffff;
+}
+
+@media (max-width: 1170px) {
+	.top-footer .subscription-form {
+		width: 344px;
+		min-height: 397px;
+		padding: 50px;
+		padding-bottom: 67px;
+		margin: 0 30px 90px 0;
+	}
+
+	.subscription-form legend {
+		margin-bottom: 40px;
+	}
+
+	.subscription-form p {
+		margin-bottom: 38px;
+	}
+	
+	.subscription-form input {
+		width: 190px;
+	}
+	
+	.top-footer .flight-plan {
+		width: 350px;
+	}
 }
 
 .flight-plan a:hover,
