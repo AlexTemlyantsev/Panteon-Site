@@ -49,6 +49,28 @@ html { box-sizing: border-box; }
 	}
 }
 
+@media (max-width: 750px) {
+	.container {
+		width: 320px;
+	}
+	
+	.hidden-visible {
+		position: absolute;
+
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+
+		white-space: nowrap;
+		-webkit-clip-path: inset(100%);
+				clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+}
+
 .button {
 	border: none;
 	cursor: pointer;
@@ -81,6 +103,12 @@ html { box-sizing: border-box; }
 	.menu-wrapper {
 		background: #79156a url("../img/background-panteon-750.jpg") no-repeat 50% 50%;
 		/* background-size: cover; */
+	}
+}
+
+@media (max-width: 750px) {
+	.menu-wrapper {
+		min-height: 580px;
 	}
 }
 
@@ -146,6 +174,17 @@ html { box-sizing: border-box; }
 	height: 18px;
 	
 	background: url("../img/menu.svg") no-repeat 0 0;  
+}
+
+@media (max-width: 750px) {
+	.main-header .top-menu {
+		padding-top: 25px;
+		margin-bottom: 95px;
+	}
+	
+	.top-menu .header-logo {
+		width: 145px;
+	}
 }
 
 .bottom-header {
@@ -220,6 +259,29 @@ html { box-sizing: border-box; }
 	}
 }
 
+@media (max-width: 750px) {
+	.bottom-header {
+		padding-left: 38px;
+	}
+
+	.bottom-header .pantheon-decoration {
+		display: none;
+	}
+
+	.caption {
+		font-size: 13px;
+		line-height: 13px;
+		width: 214px;
+		margin-bottom: 52px;
+	}
+
+	.caption span:nth-child(2) {
+		font-size: 70px;
+		line-height: 70px;
+		margin-left: -5px;
+	}
+}
+
 .presentation-panteon {
 	display: flex;
 }
@@ -230,6 +292,8 @@ html { box-sizing: border-box; }
 
 .watch-video {
 	position: relative;
+	width: 582px; 
+	height: 292px;
 }
 
 .watch-video-option {
@@ -248,11 +312,6 @@ html { box-sizing: border-box; }
 	width: 130px;
 	margin-left: 55px;
 	padding: 20px 0;
-}
-
-.watch-video img {
-	width: 582px; 
-	height: 292px;
 }
 
 .watch-video button {
@@ -359,7 +418,7 @@ html { box-sizing: border-box; }
 
 @media (max-width: 1170px) {
 	
-	.watch-video img {
+	.watch-video {
 		width: 500px; 
 		height: 292px;
 	}
@@ -379,6 +438,30 @@ html { box-sizing: border-box; }
 	.down-button {
 		margin-left: 50%;
 		margin-bottom: 38px;
+	}
+}
+
+@media (max-width: 750px) {
+	.watch-video {
+		width: 214px; 
+		height: 139px;
+	}
+	
+	.watch-video-option {
+		left: 80px;
+		top: 28px;
+	}
+	
+	.city-index {
+		position: absolute;
+		right: 85px;
+		bottom: -10px;
+		opacity: 0.5;
+	}
+	
+	.down-button {
+		margin-left: 30%;
+		margin-bottom: 27px;
 	}
 }
 
@@ -454,6 +537,37 @@ html { box-sizing: border-box; }
 	
 	.info-mars .temperature,
 	.info-mars .mountain-mars {
+		display: none;
+	}
+}
+
+@media (max-width: 750px) {
+	.info-mars-wrapper {
+		min-height: 170px;
+		margin-bottom: 45px;
+	}
+
+	.info-mars {
+		padding: 0;
+		padding-top: 40px;
+	}
+
+	.info-mars li {
+		margin: 0;
+		padding: 0;
+	}
+
+	.info-mars .number {
+		font-size: 36px;
+		line-height: 18px;
+	}
+
+	.info-mars .description {
+		margin-bottom: 35px;
+	}
+	
+	.info-mars .weight-mars,
+	.info-mars .satellite-mars {
 		display: none;
 	}
 }
@@ -546,7 +660,24 @@ html { box-sizing: border-box; }
 	.question-remember-mars::before {
 		left: -520px;
 	}
+}
+
+@media (max-width: 750px) {
+	.remember-mars h2 {
+		font-size: 36px;
+		line-height: 40px;
+		margin-bottom: 40px;
+	}
 	
+	.description-of-mars {
+		margin-bottom: 50px;
+	}
+	
+	.question-remember-mars::before {
+		left: -665px;
+		bottom: -100px;
+		transform: scale(0.48);
+	}
 }
 
 .realization {
@@ -691,7 +822,59 @@ html { box-sizing: border-box; }
 		width: 165px;
 		height: 189px;
 	}
+}
 
+@media (max-width: 750px) {
+	.realization-mask-column {
+		position: relative;
+		margin-bottom: 200px;
+	}
+	
+	.realization {
+		margin-bottom: 0;
+	}
+
+	.realization h2 {
+		font-size: 36px;
+		line-height: 36px;
+		margin-bottom: 44px;
+	}
+	
+	.realization-mask p:nth-of-type(1),
+	.realization-mask blockquote {
+		width: 100%;
+	}
+	
+	.realization-mask p:nth-of-type(1) {
+		margin-bottom: 290px;
+	}
+	
+	.realization-mask blockquote::before {
+		left: -18px;
+		top: -12px;
+	}
+	
+	.photo-mask {
+		position: absolute;
+		top: 160px;
+		right: 0;
+		
+		width: 165px;
+		height: 189px;
+		
+		margin:  0;
+		padding: 35px 45px 0 0;
+	}
+	
+	.photo-mask img {
+		width: 165px;
+		height: 189px;
+	}
+	
+	.photo-mask::before {
+		width: 165px;
+		height: 189px;
+	}
 }
 
 .flight-cost {
