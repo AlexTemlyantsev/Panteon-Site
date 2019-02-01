@@ -846,7 +846,37 @@ html { box-sizing: border-box; }
 	}
 	
 	.realization-mask p:nth-of-type(1) {
-		margin-bottom: 290px;
+		padding-bottom: 270px;
+		position: relative;
+	}
+	
+	.realization-mask p:nth-of-type(1)::before {
+		content: "";
+		
+		position: absolute;
+		bottom: 20px;
+		left: 50px;
+		z-index: 100;
+		
+		width: 165px;
+		height: 189px;
+		
+		background: url("../img/background-ilon-mask-320.jpg") no-repeat 0 0;
+	}
+	
+	.realization-mask p:nth-of-type(1)::after {
+		content: "";
+		
+		position: absolute;
+		bottom: 52px;
+		left: 85px;
+		z-index: 90;
+		
+		width: 165px;
+		height: 189px;
+		
+		background-color: #ffffff;
+		border: 10px solid #e12457;
 	}
 	
 	.realization-mask blockquote::before {
@@ -855,25 +885,7 @@ html { box-sizing: border-box; }
 	}
 	
 	.photo-mask {
-		position: absolute;
-		top: 160px;
-		right: 0;
-		
-		width: 165px;
-		height: 189px;
-		
-		margin:  0;
-		padding: 35px 45px 0 0;
-	}
-	
-	.photo-mask img {
-		width: 165px;
-		height: 189px;
-	}
-	
-	.photo-mask::before {
-		width: 165px;
-		height: 189px;
+		display: none;
 	}
 }
 
